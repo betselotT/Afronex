@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: black;
+    opacity: 0.5;
+}
+
+.wrapper > *{
+    z-index: 10;    
+}
+
+.look {
+    padding-right: 300px;
+}
+
+.look h2 {
+    font-size: 40px;
+    width: 500px;
+    padding-bottom: 25px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .inner input {
+    border: 0;
+    outline: 0;
+    background: lightgray;
+    color: #000;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.wrapper .inner input::placeholder {
+    color: black;
+}
+
+.wrapper .inner button {
+    border: 0;
+    outline: 0;
+    background: lightgray;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.wrapper .inner button img {
+    width: 25px;
+    margin-top: 5px;
+}
+
+.details {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.weather .first {
+    border-radius: 20px;
+    text-align: center;
+}
+
+.weather .details .col {
+    padding: 70px;
+}
+
+.weather .details .col img {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        display: block;
+    }
+}

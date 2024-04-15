@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="look">
+            <h2>Find Out The Current Weather Condition</h2>
+            <div class="inner">
+              <input type="text" placeholder="Enter City Name" />
+              <button><img src="images/search.png" /></button>
+            </div>
+        </div>
+
+        <div class="weather">
+          <div class="first">
+            <img src="images/rain.png" class="weather-icon" />
+            <h2 class="temp">20°C</h2>
+            <h3 class="city">New York</h3>
+          </div>
+          <div class="details">
+            <div class="col">
+              <img src="images/humidity.png" />
+              <div>
+                <h2 class="humidity">50%</h2>
+                <h3>Humidity</h3>
+              </div>
+            </div>
+            <div class="col">
+              <img src="images/wind.png" />
+              <div>
+                <h2 class="wind">15 km/hr</h2>
+                <h3>Wind Speed</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
